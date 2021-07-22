@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  become: yes
+  
+  tasks:
+   - name:install httpd
+     yum: name=apache2 state=latest
